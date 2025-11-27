@@ -105,6 +105,17 @@ try {
     //        $std->infDPS->serv->cServ->cNBS = '';// Código NBS correspondente ao serviço prestado
     $std->infDPS->serv->cServ->cIntContrib = '1234';// Código interno do contribuinte - Utilizado para identificação da DPS no Sistema interno do Contribuinte
 
+//    Grupo de informações sobre transações entre residentes ou domiciliados no Brasil com residentes ou domiciliados no exterior
+//    $std->infDPS->serv->comExt = new stdClass();
+//    $std->infDPS->serv->comExt->mdPrestacao = 4; // Modo de Prestação:     0 - Desconhecido (tipo não informado na nota de origem); 1 - Transfronteiriço; 2 - Consumo no Brasil; 3 - Movimento Temporário de Pessoas Físicas; 4 - Consumo no Exterior;
+//    $std->infDPS->serv->comExt->vincPrest = 0; // Vínculo entre as partes no negócio: 0 - Sem vínculo com o Tomador/Prestador 1 - Controlada; 2 - Controladora; 3 - Coligada; 4 - Matriz; 5 - Filial ou sucursal; 6 - Outro vínculo;
+//    $std->infDPS->serv->comExt->tpMoeda = 840; //
+//    $std->infDPS->serv->comExt->vServMoeda = (float)1.00;
+//    $std->infDPS->serv->comExt->mecAFComexP = "01";
+//    $std->infDPS->serv->comExt->mecAFComexT = "01";
+//    $std->infDPS->serv->comExt->movTempBens = 1;
+//    $std->infDPS->serv->comExt->mdic = 0;
+
 //    $std->infDPS->serv->infoCompl = new stdClass();
 //    $std->infDPS->serv->infoCompl->xInfComp = 'Informações complementares';//Campo livre para preenchimento pelo contribuinte.
 

@@ -553,7 +553,79 @@ class Dps implements DpsInterface
             );
         }
 
-        //TODO Fazer grupo comExt
+        //grupo comExt
+        if (isset($this->std->infdps->serv->comext)) {
+            $comext_inner = $this->dom->createElement('comExt');
+            $serv_inner->appendChild($comext_inner);
+
+            $this->dom->addChild(
+                $comext_inner,
+                'mdPrestacao',
+                $this->std->infdps->serv->comext->mdprestacao
+            );
+
+            $this->dom->addChild(
+                $comext_inner,
+                'vincPrest',
+                $this->std->infdps->serv->comext->vincprest
+            );
+
+            $this->dom->addChild(
+                $comext_inner,
+                'tpMoeda',
+                $this->std->infdps->serv->comext->tpmoeda
+            );
+
+            $this->dom->addChild(
+                $comext_inner,
+                'vServMoeda',
+                $this->std->infdps->serv->comext->vservmoeda
+            );
+
+            $this->dom->addChild(
+                $comext_inner,
+                'mecAFComexP',
+                $this->std->infdps->serv->comext->mecafcomexp
+            );
+
+            $this->dom->addChild(
+                $comext_inner,
+                'mecAFComexT',
+                $this->std->infdps->serv->comext->mecafcomext
+            );
+
+            $this->dom->addChild(
+                $comext_inner,
+                'movTempBens',
+                $this->std->infdps->serv->comext->movtempbens
+            );
+
+            if(isset($this->std->infdps->serv->comext->ndi)){
+                $this->dom->addChild(
+                    $comext_inner,
+                    'nDI',
+                    $this->std->infdps->serv->comext->ndi
+                );
+            }
+
+            if(isset($this->std->infdps->serv->comext->nre)){
+                $this->dom->addChild(
+                    $comext_inner,
+                    'nRE',
+                    $this->std->infdps->serv->comext->nre
+                );
+            }
+
+
+            $this->dom->addChild(
+                $comext_inner,
+                'mdic',
+                $this->std->infdps->serv->comext->mdic
+            );
+
+        }
+
+
         //TODO Fazer grupo lsadppu
         //TODO Fazer grupo obra
 if (isset($this->std->infdps->serv->atvevento)) {
